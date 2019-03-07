@@ -41,7 +41,7 @@ func (c jsContext) GetValue(key interface{}) (value interface{}, ok bool) {
 	return
 }
 
-// Unlike the implementation in github.com/jtolds/gls, this implementation
+// SetValues: Unlike the implementation in github.com/jtolds/gls, this implementation
 // assumes that SetValues is not called multiple times in the same stack for
 // the same context manager.
 func (c jsContext) SetValues(contextCall func(), keyVal ...interface{}) {
